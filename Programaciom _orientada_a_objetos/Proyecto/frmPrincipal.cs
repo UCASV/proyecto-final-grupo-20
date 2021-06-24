@@ -24,7 +24,14 @@ namespace Proyecto
             //materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
 
+        }
 
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
