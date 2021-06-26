@@ -36,24 +36,34 @@ namespace Proyecto
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.imgList = new System.Windows.Forms.ImageList(this.components);
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.imgList = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.materialTabControl2 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabDash.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.materialTabControl2.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabDash
             // 
             this.tabDash.Controls.Add(this.tabPage1);
             this.tabDash.Controls.Add(this.tabPage2);
+            this.tabDash.Controls.Add(this.tabPage6);
             this.tabDash.Depth = 0;
             this.tabDash.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabDash.ImageList = this.imgList;
@@ -117,6 +127,40 @@ namespace Proyecto
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Seguimiento de citas";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel1.HighEmphasis = true;
+            this.materialLabel1.Location = new System.Drawing.Point(306, 18);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(392, 41);
+            this.materialLabel1.TabIndex = 4;
+            this.materialLabel1.Text = "SEGUIMIENTO DE CITAS\r\n";
+            this.materialLabel1.UseAccent = true;
+            // 
+            // materialButton3
+            // 
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.DrawShadows = false;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = null;
+            this.materialButton3.Location = new System.Drawing.Point(747, 375);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.Size = new System.Drawing.Size(135, 36);
+            this.materialButton3.TabIndex = 3;
+            this.materialButton3.Text = "cita realizada";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton3.UseAccentColor = true;
+            this.materialButton3.UseVisualStyleBackColor = true;
             // 
             // materialButton2
             // 
@@ -183,47 +227,6 @@ namespace Proyecto
             this.tabPage3.Text = "Detalles de registro";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // imgList
-            // 
-            this.imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList.ImageStream")));
-            this.imgList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgList.Images.SetKeyName(0, "Icons8Calendar64.png");
-            this.imgList.Images.SetKeyName(1, "Icons8Edit64.png");
-            // 
-            // materialButton3
-            // 
-            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.DrawShadows = false;
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(747, 375);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.Size = new System.Drawing.Size(135, 36);
-            this.materialButton3.TabIndex = 3;
-            this.materialButton3.Text = "cita realizada";
-            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton3.UseAccentColor = true;
-            this.materialButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel1.HighEmphasis = true;
-            this.materialLabel1.Location = new System.Drawing.Point(306, 18);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(392, 41);
-            this.materialLabel1.TabIndex = 4;
-            this.materialLabel1.Text = "SEGUIMIENTO DE CITAS\r\n";
-            this.materialLabel1.UseAccent = true;
-            // 
             // tabPage5
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -232,6 +235,85 @@ namespace Proyecto
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Cita realizada";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // imgList
+            // 
+            this.imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList.ImageStream")));
+            this.imgList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgList.Images.SetKeyName(0, "Icons8Calendar64.png");
+            this.imgList.Images.SetKeyName(1, "Icons8Edit64.png");
+            this.imgList.Images.SetKeyName(2, "Icons8Wait64.png");
+            this.imgList.Images.SetKeyName(3, "Icons8Syringe64.png");
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.materialTabControl2);
+            this.tabPage6.ImageKey = "Icons8Syringe64.png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 39);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1036, 490);
+            this.tabPage6.TabIndex = 2;
+            this.tabPage6.Text = "Proceso de vacunación";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // materialTabControl2
+            // 
+            this.materialTabControl2.Controls.Add(this.tabPage7);
+            this.materialTabControl2.Controls.Add(this.tabPage8);
+            this.materialTabControl2.Depth = 0;
+            this.materialTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialTabControl2.Location = new System.Drawing.Point(0, 0);
+            this.materialTabControl2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl2.Multiline = true;
+            this.materialTabControl2.Name = "materialTabControl2";
+            this.materialTabControl2.SelectedIndex = 0;
+            this.materialTabControl2.Size = new System.Drawing.Size(1036, 490);
+            this.materialTabControl2.TabIndex = 0;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.dateTimePicker1);
+            this.tabPage7.Controls.Add(this.materialLabel2);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1028, 464);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(192, 74);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel2.HighEmphasis = true;
+            this.materialLabel2.ImageKey = "Icons8Wait64.png";
+            this.materialLabel2.Location = new System.Drawing.Point(376, 20);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(262, 41);
+            this.materialLabel2.TabIndex = 0;
+            this.materialLabel2.Text = "SALÁ DE ESPERA";
+            this.materialLabel2.UseAccent = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(396, 139);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(375, 20);
+            this.dateTimePicker1.TabIndex = 1;
             // 
             // frmPrincipal
             // 
@@ -254,6 +336,10 @@ namespace Proyecto
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.materialTabControl2.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -273,6 +359,12 @@ namespace Proyecto
         private MaterialSkin.Controls.MaterialButton materialButton3;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl2;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
