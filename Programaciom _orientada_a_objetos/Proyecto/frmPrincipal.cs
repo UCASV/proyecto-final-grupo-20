@@ -33,5 +33,20 @@ namespace Proyecto
         {
 
         }
+
+        private void materialLabel12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
