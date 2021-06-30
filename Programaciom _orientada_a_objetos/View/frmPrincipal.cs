@@ -1,5 +1,6 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
+using Model.SQLSERVERContext;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +15,11 @@ namespace Proyecto
 {
     public partial class frmPrincipal : MaterialForm
     {
-        public frmPrincipal()
+        public Administrator administratorRef;
+        public frmPrincipal(Administrator administrator)
         {
+            this.administratorRef = administrator;
             InitializeComponent();
-
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
