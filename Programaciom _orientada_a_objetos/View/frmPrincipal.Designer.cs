@@ -33,13 +33,13 @@ namespace Proyecto
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.tabDash = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.materialLabel32 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblDateTime = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel27 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel26 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblTypeEmployee = new MaterialSkin.Controls.MaterialLabel();
+            this.lblDirection = new MaterialSkin.Controls.MaterialLabel();
+            this.lblEmail = new MaterialSkin.Controls.MaterialLabel();
+            this.lblName = new MaterialSkin.Controls.MaterialLabel();
+            this.lblId = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
@@ -47,10 +47,10 @@ namespace Proyecto
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel31 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel30 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel29 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel28 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblEmailC = new MaterialSkin.Controls.MaterialLabel();
+            this.lblInCharge = new MaterialSkin.Controls.MaterialLabel();
+            this.lblPhone = new MaterialSkin.Controls.MaterialLabel();
+            this.lblDirectionC = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
@@ -135,7 +135,7 @@ namespace Proyecto
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage9.Controls.Add(this.materialLabel32);
+            this.tabPage9.Controls.Add(this.lblDateTime);
             this.tabPage9.Controls.Add(this.materialCard5);
             this.tabPage9.Controls.Add(this.materialCard6);
             this.tabPage9.ImageKey = "Icons8Person64.png";
@@ -146,31 +146,31 @@ namespace Proyecto
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Información";
             // 
-            // materialLabel32
+            // lblDateTime
             // 
-            this.materialLabel32.AutoSize = true;
-            this.materialLabel32.Depth = 0;
-            this.materialLabel32.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel32.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel32.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel32.HighEmphasis = true;
-            this.materialLabel32.Location = new System.Drawing.Point(410, 520);
-            this.materialLabel32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel32.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel32.Name = "materialLabel32";
-            this.materialLabel32.Size = new System.Drawing.Size(189, 29);
-            this.materialLabel32.TabIndex = 26;
-            this.materialLabel32.Text = "Log In : Loading...";
-            this.materialLabel32.UseAccent = true;
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Depth = 0;
+            this.lblDateTime.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblDateTime.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblDateTime.ForeColor = System.Drawing.Color.Blue;
+            this.lblDateTime.HighEmphasis = true;
+            this.lblDateTime.Location = new System.Drawing.Point(410, 520);
+            this.lblDateTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDateTime.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(189, 29);
+            this.lblDateTime.TabIndex = 26;
+            this.lblDateTime.Text = "Log In : Loading...";
+            this.lblDateTime.UseAccent = true;
             // 
             // materialCard5
             // 
             this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard5.Controls.Add(this.materialLabel27);
-            this.materialCard5.Controls.Add(this.materialLabel26);
-            this.materialCard5.Controls.Add(this.materialLabel24);
-            this.materialCard5.Controls.Add(this.materialLabel25);
-            this.materialCard5.Controls.Add(this.materialLabel19);
+            this.materialCard5.Controls.Add(this.lblTypeEmployee);
+            this.materialCard5.Controls.Add(this.lblDirection);
+            this.materialCard5.Controls.Add(this.lblEmail);
+            this.materialCard5.Controls.Add(this.lblName);
+            this.materialCard5.Controls.Add(this.lblId);
             this.materialCard5.Controls.Add(this.materialLabel18);
             this.materialCard5.Controls.Add(this.materialLabel17);
             this.materialCard5.Controls.Add(this.materialLabel16);
@@ -180,98 +180,98 @@ namespace Proyecto
             this.materialCard5.Depth = 0;
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard5.Location = new System.Drawing.Point(16, 16);
-            this.materialCard5.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(16);
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
-            this.materialCard5.Padding = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(16);
             this.materialCard5.Size = new System.Drawing.Size(534, 488);
             this.materialCard5.TabIndex = 2;
             // 
-            // materialLabel27
+            // lblTypeEmployee
             // 
-            this.materialLabel27.AutoSize = true;
-            this.materialLabel27.Depth = 0;
-            this.materialLabel27.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel27.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel27.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel27.HighEmphasis = true;
-            this.materialLabel27.Location = new System.Drawing.Point(20, 373);
-            this.materialLabel27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel27.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel27.Name = "materialLabel27";
-            this.materialLabel27.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel27.TabIndex = 25;
-            this.materialLabel27.Text = "Loading...";
-            this.materialLabel27.UseAccent = true;
+            this.lblTypeEmployee.AutoSize = true;
+            this.lblTypeEmployee.Depth = 0;
+            this.lblTypeEmployee.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblTypeEmployee.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblTypeEmployee.ForeColor = System.Drawing.Color.Blue;
+            this.lblTypeEmployee.HighEmphasis = true;
+            this.lblTypeEmployee.Location = new System.Drawing.Point(20, 373);
+            this.lblTypeEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTypeEmployee.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblTypeEmployee.Name = "lblTypeEmployee";
+            this.lblTypeEmployee.Size = new System.Drawing.Size(105, 29);
+            this.lblTypeEmployee.TabIndex = 25;
+            this.lblTypeEmployee.Text = "Loading...";
+            this.lblTypeEmployee.UseAccent = true;
             // 
-            // materialLabel26
+            // lblDirection
             // 
-            this.materialLabel26.AutoSize = true;
-            this.materialLabel26.Depth = 0;
-            this.materialLabel26.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel26.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel26.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel26.HighEmphasis = true;
-            this.materialLabel26.Location = new System.Drawing.Point(20, 302);
-            this.materialLabel26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel26.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel26.Name = "materialLabel26";
-            this.materialLabel26.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel26.TabIndex = 24;
-            this.materialLabel26.Text = "Loading...";
-            this.materialLabel26.UseAccent = true;
+            this.lblDirection.AutoSize = true;
+            this.lblDirection.Depth = 0;
+            this.lblDirection.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblDirection.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblDirection.ForeColor = System.Drawing.Color.Blue;
+            this.lblDirection.HighEmphasis = true;
+            this.lblDirection.Location = new System.Drawing.Point(20, 302);
+            this.lblDirection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDirection.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblDirection.Name = "lblDirection";
+            this.lblDirection.Size = new System.Drawing.Size(105, 29);
+            this.lblDirection.TabIndex = 24;
+            this.lblDirection.Text = "Loading...";
+            this.lblDirection.UseAccent = true;
             // 
-            // materialLabel24
+            // lblEmail
             // 
-            this.materialLabel24.AutoSize = true;
-            this.materialLabel24.Depth = 0;
-            this.materialLabel24.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel24.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel24.HighEmphasis = true;
-            this.materialLabel24.Location = new System.Drawing.Point(20, 232);
-            this.materialLabel24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel24.Name = "materialLabel24";
-            this.materialLabel24.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel24.TabIndex = 23;
-            this.materialLabel24.Text = "Loading...";
-            this.materialLabel24.UseAccent = true;
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Depth = 0;
+            this.lblEmail.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEmail.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblEmail.ForeColor = System.Drawing.Color.Blue;
+            this.lblEmail.HighEmphasis = true;
+            this.lblEmail.Location = new System.Drawing.Point(20, 232);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(105, 29);
+            this.lblEmail.TabIndex = 23;
+            this.lblEmail.Text = "Loading...";
+            this.lblEmail.UseAccent = true;
             // 
-            // materialLabel25
+            // lblName
             // 
-            this.materialLabel25.AutoSize = true;
-            this.materialLabel25.Depth = 0;
-            this.materialLabel25.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel25.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel25.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel25.HighEmphasis = true;
-            this.materialLabel25.Location = new System.Drawing.Point(19, 162);
-            this.materialLabel25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel25.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel25.Name = "materialLabel25";
-            this.materialLabel25.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel25.TabIndex = 22;
-            this.materialLabel25.Text = "Loading...";
-            this.materialLabel25.UseAccent = true;
+            this.lblName.AutoSize = true;
+            this.lblName.Depth = 0;
+            this.lblName.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblName.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblName.ForeColor = System.Drawing.Color.Blue;
+            this.lblName.HighEmphasis = true;
+            this.lblName.Location = new System.Drawing.Point(19, 162);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(105, 29);
+            this.lblName.TabIndex = 22;
+            this.lblName.Text = "Loading...";
+            this.lblName.UseAccent = true;
             // 
-            // materialLabel19
+            // lblId
             // 
-            this.materialLabel19.AutoSize = true;
-            this.materialLabel19.Depth = 0;
-            this.materialLabel19.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel19.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel19.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel19.HighEmphasis = true;
-            this.materialLabel19.Location = new System.Drawing.Point(20, 91);
-            this.materialLabel19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel19.Name = "materialLabel19";
-            this.materialLabel19.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel19.TabIndex = 20;
-            this.materialLabel19.Text = "Loading...";
-            this.materialLabel19.UseAccent = true;
-            this.materialLabel19.Click += new System.EventHandler(this.materialLabel19_Click);
+            this.lblId.AutoSize = true;
+            this.lblId.Depth = 0;
+            this.lblId.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblId.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblId.ForeColor = System.Drawing.Color.Blue;
+            this.lblId.HighEmphasis = true;
+            this.lblId.Location = new System.Drawing.Point(20, 91);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblId.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(105, 29);
+            this.lblId.TabIndex = 20;
+            this.lblId.Text = "Loading...";
+            this.lblId.UseAccent = true;
+            this.lblId.Click += new System.EventHandler(this.materialLabel19_Click);
             // 
             // materialLabel18
             // 
@@ -356,10 +356,10 @@ namespace Proyecto
             // materialCard6
             // 
             this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard6.Controls.Add(this.materialLabel31);
-            this.materialCard6.Controls.Add(this.materialLabel30);
-            this.materialCard6.Controls.Add(this.materialLabel29);
-            this.materialCard6.Controls.Add(this.materialLabel28);
+            this.materialCard6.Controls.Add(this.lblEmailC);
+            this.materialCard6.Controls.Add(this.lblInCharge);
+            this.materialCard6.Controls.Add(this.lblPhone);
+            this.materialCard6.Controls.Add(this.lblDirectionC);
             this.materialCard6.Controls.Add(this.materialLabel20);
             this.materialCard6.Controls.Add(this.materialLabel21);
             this.materialCard6.Controls.Add(this.materialLabel22);
@@ -368,80 +368,80 @@ namespace Proyecto
             this.materialCard6.Depth = 0;
             this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard6.Location = new System.Drawing.Point(590, 16);
-            this.materialCard6.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard6.Margin = new System.Windows.Forms.Padding(16);
             this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard6.Name = "materialCard6";
-            this.materialCard6.Padding = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard6.Padding = new System.Windows.Forms.Padding(16);
             this.materialCard6.Size = new System.Drawing.Size(534, 488);
             this.materialCard6.TabIndex = 1;
             // 
-            // materialLabel31
+            // lblEmailC
             // 
-            this.materialLabel31.AutoSize = true;
-            this.materialLabel31.Depth = 0;
-            this.materialLabel31.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel31.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel31.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel31.HighEmphasis = true;
-            this.materialLabel31.Location = new System.Drawing.Point(20, 302);
-            this.materialLabel31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel31.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel31.Name = "materialLabel31";
-            this.materialLabel31.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel31.TabIndex = 24;
-            this.materialLabel31.Text = "Loading...";
-            this.materialLabel31.UseAccent = true;
+            this.lblEmailC.AutoSize = true;
+            this.lblEmailC.Depth = 0;
+            this.lblEmailC.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEmailC.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblEmailC.ForeColor = System.Drawing.Color.Blue;
+            this.lblEmailC.HighEmphasis = true;
+            this.lblEmailC.Location = new System.Drawing.Point(20, 302);
+            this.lblEmailC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmailC.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblEmailC.Name = "lblEmailC";
+            this.lblEmailC.Size = new System.Drawing.Size(105, 29);
+            this.lblEmailC.TabIndex = 24;
+            this.lblEmailC.Text = "Loading...";
+            this.lblEmailC.UseAccent = true;
             // 
-            // materialLabel30
+            // lblInCharge
             // 
-            this.materialLabel30.AutoSize = true;
-            this.materialLabel30.Depth = 0;
-            this.materialLabel30.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel30.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel30.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel30.HighEmphasis = true;
-            this.materialLabel30.Location = new System.Drawing.Point(20, 232);
-            this.materialLabel30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel30.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel30.Name = "materialLabel30";
-            this.materialLabel30.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel30.TabIndex = 23;
-            this.materialLabel30.Text = "Loading...";
-            this.materialLabel30.UseAccent = true;
+            this.lblInCharge.AutoSize = true;
+            this.lblInCharge.Depth = 0;
+            this.lblInCharge.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblInCharge.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblInCharge.ForeColor = System.Drawing.Color.Blue;
+            this.lblInCharge.HighEmphasis = true;
+            this.lblInCharge.Location = new System.Drawing.Point(20, 232);
+            this.lblInCharge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInCharge.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblInCharge.Name = "lblInCharge";
+            this.lblInCharge.Size = new System.Drawing.Size(105, 29);
+            this.lblInCharge.TabIndex = 23;
+            this.lblInCharge.Text = "Loading...";
+            this.lblInCharge.UseAccent = true;
             // 
-            // materialLabel29
+            // lblPhone
             // 
-            this.materialLabel29.AutoSize = true;
-            this.materialLabel29.Depth = 0;
-            this.materialLabel29.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel29.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel29.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel29.HighEmphasis = true;
-            this.materialLabel29.Location = new System.Drawing.Point(18, 162);
-            this.materialLabel29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel29.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel29.Name = "materialLabel29";
-            this.materialLabel29.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel29.TabIndex = 22;
-            this.materialLabel29.Text = "Loading...";
-            this.materialLabel29.UseAccent = true;
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Depth = 0;
+            this.lblPhone.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPhone.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblPhone.ForeColor = System.Drawing.Color.Blue;
+            this.lblPhone.HighEmphasis = true;
+            this.lblPhone.Location = new System.Drawing.Point(18, 162);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(105, 29);
+            this.lblPhone.TabIndex = 22;
+            this.lblPhone.Text = "Loading...";
+            this.lblPhone.UseAccent = true;
             // 
-            // materialLabel28
+            // lblDirectionC
             // 
-            this.materialLabel28.AutoSize = true;
-            this.materialLabel28.Depth = 0;
-            this.materialLabel28.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel28.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel28.ForeColor = System.Drawing.Color.Blue;
-            this.materialLabel28.HighEmphasis = true;
-            this.materialLabel28.Location = new System.Drawing.Point(18, 91);
-            this.materialLabel28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel28.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel28.Name = "materialLabel28";
-            this.materialLabel28.Size = new System.Drawing.Size(105, 29);
-            this.materialLabel28.TabIndex = 21;
-            this.materialLabel28.Text = "Loading...";
-            this.materialLabel28.UseAccent = true;
+            this.lblDirectionC.AutoSize = true;
+            this.lblDirectionC.Depth = 0;
+            this.lblDirectionC.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblDirectionC.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblDirectionC.ForeColor = System.Drawing.Color.Blue;
+            this.lblDirectionC.HighEmphasis = true;
+            this.lblDirectionC.Location = new System.Drawing.Point(18, 91);
+            this.lblDirectionC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDirectionC.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblDirectionC.Name = "lblDirectionC";
+            this.lblDirectionC.Size = new System.Drawing.Size(105, 29);
+            this.lblDirectionC.TabIndex = 21;
+            this.lblDirectionC.Text = "Loading...";
+            this.lblDirectionC.UseAccent = true;
             // 
             // materialLabel20
             // 
@@ -532,10 +532,10 @@ namespace Proyecto
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard2.Location = new System.Drawing.Point(589, 77);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(16);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(16);
             this.materialCard2.Size = new System.Drawing.Size(539, 270);
             this.materialCard2.TabIndex = 34;
             // 
@@ -584,10 +584,10 @@ namespace Proyecto
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard1.Location = new System.Drawing.Point(16, 76);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(16);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(16);
             this.materialCard1.Size = new System.Drawing.Size(502, 470);
             this.materialCard1.TabIndex = 33;
             // 
@@ -846,10 +846,10 @@ namespace Proyecto
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard4.Location = new System.Drawing.Point(20, 84);
-            this.materialCard4.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(16);
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
-            this.materialCard4.Padding = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(16);
             this.materialCard4.Size = new System.Drawing.Size(1112, 150);
             this.materialCard4.TabIndex = 37;
             // 
@@ -950,7 +950,7 @@ namespace Proyecto
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage3.Size = new System.Drawing.Size(1194, 530);
+            this.tabPage3.Size = new System.Drawing.Size(1193, 538);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Detalles de registro";
             // 
@@ -963,10 +963,10 @@ namespace Proyecto
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard3.Location = new System.Drawing.Point(20, 66);
-            this.materialCard3.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(16);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
-            this.materialCard3.Padding = new System.Windows.Forms.Padding(16, 16, 16, 16);
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(16);
             this.materialCard3.Size = new System.Drawing.Size(1112, 150);
             this.materialCard3.TabIndex = 38;
             // 
@@ -1026,7 +1026,7 @@ namespace Proyecto
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1194, 530);
+            this.tabPage5.Size = new System.Drawing.Size(1193, 538);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Cita realizada";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1102,7 +1102,7 @@ namespace Proyecto
             this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage8.Size = new System.Drawing.Size(1201, 537);
+            this.tabPage8.Size = new System.Drawing.Size(1201, 544);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1223,16 +1223,16 @@ namespace Proyecto
         private MaterialSkin.Controls.MaterialLabel materialLabel21;
         private MaterialSkin.Controls.MaterialLabel materialLabel22;
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
-        private MaterialSkin.Controls.MaterialLabel materialLabel19;
-        private MaterialSkin.Controls.MaterialLabel materialLabel27;
-        private MaterialSkin.Controls.MaterialLabel materialLabel26;
-        private MaterialSkin.Controls.MaterialLabel materialLabel24;
-        private MaterialSkin.Controls.MaterialLabel materialLabel25;
-        private MaterialSkin.Controls.MaterialLabel materialLabel31;
-        private MaterialSkin.Controls.MaterialLabel materialLabel30;
-        private MaterialSkin.Controls.MaterialLabel materialLabel29;
-        private MaterialSkin.Controls.MaterialLabel materialLabel28;
-        private MaterialSkin.Controls.MaterialLabel materialLabel32;
+        private MaterialSkin.Controls.MaterialLabel lblId;
+        private MaterialSkin.Controls.MaterialLabel lblTypeEmployee;
+        private MaterialSkin.Controls.MaterialLabel lblDirection;
+        private MaterialSkin.Controls.MaterialLabel lblEmail;
+        private MaterialSkin.Controls.MaterialLabel lblName;
+        private MaterialSkin.Controls.MaterialLabel lblEmailC;
+        private MaterialSkin.Controls.MaterialLabel lblInCharge;
+        private MaterialSkin.Controls.MaterialLabel lblPhone;
+        private MaterialSkin.Controls.MaterialLabel lblDirectionC;
+        private MaterialSkin.Controls.MaterialLabel lblDateTime;
     }
 }
 

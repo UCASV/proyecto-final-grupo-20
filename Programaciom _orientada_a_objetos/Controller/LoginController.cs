@@ -1,6 +1,7 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
 using Model.SQLSERVERContext;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,5 +25,52 @@ namespace Controller
 
             return administratorSend;
         }
+
+        public Employee GetEmployee(Administrator administrator)
+        {
+            List<Employee> employees = db.Employees.ToList();
+            //List<TypeEmployee> typeEmployees = db.TypeEmployees.ToList();
+            Employee employeeSend = employees.Find(e => e.IdAdministrator == administrator.Id);
+            /*List<Employee> typeEmployees = db.typeEmployees.ToList();
+            TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.);*/
+            return employeeSend;
+        }
+
+        public string GetTypeEmployee(Employee employee)
+        {
+            List<TypeEmployee> typeEmployees = db.TypeEmployees.ToList();
+            TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.Id == employee.IdTypeEmployee); 
+ 
+            return typeEmployeeSend.TypeEmployee1;
+        }
+
+        public List<AddressCabins> GetAddressCabin()
+        {
+            List<Cabin> cabins = db.Cabins.ToList();
+            List<AddressCabins> addressCabins = new List<AddressCabins>();
+            //AddressCabins addressCabinTemp;
+            AddressCabins addressCabinTemp = new AddressCabins();
+            for (int i=0; i<cabins.Count();i++) 
+            {
+                addressCabinTemp.Id = cabins[i].Id;
+                addressCabinTemp.AddressCabin = cabins[i].AddressCabin;
+
+                addressCabins.Add(addressCabinTemp);
+            }
+            
+
+            /*List<TypeEmployee> typeEmployees = db.TypeEmployees.ToList();
+            TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.Id == Employee.IdTypeEmployee);
+            */
+            return addressCabins ;
+        }
+
+        public void SetLoginTime(LoginTime loginTime)
+        {
+
+            db.Add(loginTime);
+            db.SaveChanges();
+        }
+
     }
 }

@@ -15,7 +15,9 @@ namespace Proyecto
 {
     public partial class frmPrincipal : MaterialForm
     {
+        public Controller.LoginController loginController = new Controller.LoginController();
         public Administrator administratorRef;
+        public Employee employeeRef;
         public frmPrincipal(Administrator administrator)
         {
             this.administratorRef = administrator;
@@ -28,7 +30,17 @@ namespace Proyecto
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+            employeeRef = loginController.GetEmployee(administratorRef);
 
+            lblId.Text = employeeRef.Id.ToString();
+            lblName.Text = employeeRef.NameEmployee.ToString();
+            lblEmail.Text = employeeRef.InstitutionalEmail.ToString();
+            lblDirection.Text = employeeRef.AddressEmployee.ToString();
+            lblTypeEmployee.Text = loginController.GetTypeEmployee(employeeRef).ToString();
+            lblDirectionC.Text = employeeRef.Id.ToString();
+            lblPhone.Text = employeeRef.Id.ToString();
+            lblInCharge.Text = employeeRef.Id.ToString();
+            lblEmailC.Text = employeeRef.Id.ToString();
         }
 
         private void materialButton1_Click(object sender, EventArgs e)

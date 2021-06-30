@@ -17,10 +17,11 @@ namespace Proyecto
     {
         
         public Controller.LoginController loginController = new Controller.LoginController();
-
+        public LoginTime loginTimeRef;
         public frmLogin()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -29,7 +30,9 @@ namespace Proyecto
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-           
+            cmbAddressCabin.DataSource = loginController.GetAddressCabin();
+            cmbAddressCabin.DisplayMember = "AddressCabin";
+            cmbAddressCabin.ValueMember = "Id";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -38,13 +41,26 @@ namespace Proyecto
             {
                 /*MessageBox.Show("Bienvenido!", "Clinica UCA",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);*/
+                //DateTime dateTime = new DateTime();
+
+                loginTimeRef.DateTimeLogin = DateTime.Now;
+                loginController.SetLoginTime(loginTimeRef);
+                
                 var window = new frmPrincipal(loginController.GetAdministrator(txtUser.Text, txtPassword.Text));
                 window.ShowDialog();
                 this.Hide();
+
             }
             else
-                MessageBox.Show("Usuario no existe!", "Clinica UCA",
+                MessageBox.Show("Usuario no existe!", "Cabina UCA",
                     MessageBoxButtons.OK, MessageBoxIcon.Error); 
+
+
+        }
+
+        private void cmbAddressCabin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

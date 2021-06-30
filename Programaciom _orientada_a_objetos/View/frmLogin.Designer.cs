@@ -35,6 +35,8 @@ namespace Proyecto
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.cmbAddressCabin = new MaterialSkin.Controls.MaterialComboBox();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -62,7 +64,7 @@ namespace Proyecto
             this.txtPassword.Depth = 0;
             this.txtPassword.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPassword.LeadingIcon = null;
-            this.txtPassword.Location = new System.Drawing.Point(363, 309);
+            this.txtPassword.Location = new System.Drawing.Point(367, 227);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.MaxLength = 50;
             this.txtPassword.MouseState = MaterialSkin.MouseState.OUT;
@@ -80,7 +82,7 @@ namespace Proyecto
             this.txtUser.Depth = 0;
             this.txtUser.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtUser.LeadingIcon = null;
-            this.txtUser.Location = new System.Drawing.Point(363, 197);
+            this.txtUser.Location = new System.Drawing.Point(367, 150);
             this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.MaxLength = 50;
             this.txtUser.MouseState = MaterialSkin.MouseState.OUT;
@@ -114,7 +116,7 @@ namespace Proyecto
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel1.Location = new System.Drawing.Point(202, 215);
+            this.materialLabel1.Location = new System.Drawing.Point(206, 168);
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -128,7 +130,7 @@ namespace Proyecto
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel2.Location = new System.Drawing.Point(202, 321);
+            this.materialLabel2.Location = new System.Drawing.Point(206, 239);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
@@ -136,11 +138,49 @@ namespace Proyecto
             this.materialLabel2.TabIndex = 19;
             this.materialLabel2.Text = "Contraseña:";
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel4.Location = new System.Drawing.Point(206, 328);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(68, 24);
+            this.materialLabel4.TabIndex = 21;
+            this.materialLabel4.Text = "Cabina:";
+            // 
+            // cmbAddressCabin
+            // 
+            this.cmbAddressCabin.AutoResize = false;
+            this.cmbAddressCabin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbAddressCabin.Depth = 0;
+            this.cmbAddressCabin.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbAddressCabin.DropDownHeight = 174;
+            this.cmbAddressCabin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAddressCabin.DropDownWidth = 121;
+            this.cmbAddressCabin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbAddressCabin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbAddressCabin.FormattingEnabled = true;
+            this.cmbAddressCabin.IntegralHeight = false;
+            this.cmbAddressCabin.ItemHeight = 43;
+            this.cmbAddressCabin.Location = new System.Drawing.Point(367, 316);
+            this.cmbAddressCabin.MaxDropDownItems = 4;
+            this.cmbAddressCabin.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbAddressCabin.Name = "cmbAddressCabin";
+            this.cmbAddressCabin.Size = new System.Drawing.Size(313, 49);
+            this.cmbAddressCabin.StartIndex = 0;
+            this.cmbAddressCabin.TabIndex = 22;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.cmbAddressCabin);
+            this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.btnLogin);
@@ -165,5 +205,7 @@ namespace Proyecto
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialComboBox cmbAddressCabin;
     }
 }
