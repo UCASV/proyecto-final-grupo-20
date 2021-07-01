@@ -1,30 +1,26 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
+using Model;
 using Model.SQLSERVERContext;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto
 {
     public partial class frmLogin : MaterialForm
     {
-        
+
         public Controller.LoginController loginController = new Controller.LoginController();
         public LoginTime loginTimeRef = new LoginTime();
         public Administrator administratorRef = new Administrator();
-        public Cabin cabinRef;
+        public Cabin cabinRef = new Cabin();
         public Employee employeeRef;
         public frmLogin()
         {
             InitializeComponent();
-            
+
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -33,7 +29,8 @@ namespace Proyecto
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            cmbAddressCabin.DataSource = loginController.GetAddressCabin();
+            ProyectDBContext db = new ProyectDBContext();
+            cmbAddressCabin.DataSource = db.Cabins.ToList(); ;
             cmbAddressCabin.DisplayMember = "AddressCabin";
             cmbAddressCabin.ValueMember = "Id";
         }
@@ -56,15 +53,15 @@ namespace Proyecto
                 loginTimeRef.IdCabin = cabinRef.Id;
                 loginController.SetLoginTime(loginTimeRef);
                 
-                var window = new frmPrincipal(administratorRef,cabinRef,loginTimeRef);
+                var window = new frmPrincipal(administratorRef, cabinRef, loginTimeRef);
+                frmLogin.ActiveForm.Hide();
                 window.ShowDialog();
-                this.Hide();
 
 
             }
             else
                 MessageBox.Show("Usuario no existe!", "Cabina UCA",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
         }

@@ -1,8 +1,5 @@
-﻿using MaterialSkin;
-using MaterialSkin.Controls;
+﻿using Model;
 using Model.SQLSERVERContext;
-using Model;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,7 +15,7 @@ namespace Controller
 
             return exists;
         }
-        public Administrator GetAdministrator(string txtUser, string txtPassword) 
+        public Administrator GetAdministrator(string txtUser, string txtPassword)
         {
             List<Administrator> administrators = db.Administrators.ToList();
             Administrator administratorSend = administrators.Find(a => a.Username == txtUser && a.PasswordAdmin == txtPassword);
@@ -39,8 +36,8 @@ namespace Controller
         public string GetTypeEmployee(Employee employee)
         {
             List<TypeEmployee> typeEmployees = db.TypeEmployees.ToList();
-            TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.Id == employee.IdTypeEmployee); 
- 
+            TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.Id == employee.IdTypeEmployee);
+
             return typeEmployeeSend.TypeEmployee1;
         }
 
@@ -62,19 +59,19 @@ namespace Controller
             List<AddressCabins> addressCabins = new List<AddressCabins>();
             //AddressCabins addressCabinTemp;
             AddressCabins addressCabinTemp = new AddressCabins();
-            for (int i=0; i<cabins.Count();i++) 
+            for (int i = 0; i < cabins.Count(); i++)
             {
                 addressCabinTemp.Id = cabins[i].Id;
                 addressCabinTemp.AddressCabin = cabins[i].AddressCabin;
 
                 addressCabins.Add(addressCabinTemp);
             }
-            
+
 
             /*List<TypeEmployee> typeEmployees = db.TypeEmployees.ToList();
             TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.Id == Employee.IdTypeEmployee);
             */
-            return addressCabins ;
+            return addressCabins;
         }
 
         public void SetLoginTime(LoginTime loginTime)

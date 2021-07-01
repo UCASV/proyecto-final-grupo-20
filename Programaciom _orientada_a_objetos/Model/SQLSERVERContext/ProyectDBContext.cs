@@ -35,13 +35,13 @@ namespace Model.SQLSERVERContext
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=ProyectDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost\\;Database=ProyectDB;Trusted_Connection=True;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+            modelBuilder.HasAnnotation("Relational:Collation", "Modern_Spanish_CI_AS");
 
             modelBuilder.Entity<Administrator>(entity =>
             {
@@ -141,7 +141,7 @@ namespace Model.SQLSERVERContext
             modelBuilder.Entity<Citizen>(entity =>
             {
                 entity.HasKey(e => e.Dui)
-                    .HasName("PK__Citizen__D876F1BE27F3783F");
+                    .HasName("PK__Citizen__D876F1BE8588D7B8");
 
                 entity.ToTable("Citizen");
 
@@ -161,6 +161,8 @@ namespace Model.SQLSERVERContext
 
                 entity.Property(e => e.IdAppointment).HasColumnName("idAppointment");
 
+                entity.Property(e => e.IdCronicDesease).HasColumnName("idCronicDesease");
+
                 entity.Property(e => e.IdInstitution).HasColumnName("idInstitution");
 
                 entity.Property(e => e.IdPriorityGroup).HasColumnName("idPriorityGroup");
@@ -176,6 +178,11 @@ namespace Model.SQLSERVERContext
                     .WithMany(p => p.Citizens)
                     .HasForeignKey(d => d.IdAppointment)
                     .HasConstraintName("FK__Citizen__idAppoi__534D60F1");
+
+                entity.HasOne(d => d.IdCronicDeseaseNavigation)
+                    .WithMany(p => p.Citizens)
+                    .HasForeignKey(d => d.IdCronicDesease)
+                    .HasConstraintName("FK__Citizen__idCroni__5535A963");
 
                 entity.HasOne(d => d.IdInstitutionNavigation)
                     .WithMany(p => p.Citizens)
@@ -260,9 +267,7 @@ namespace Model.SQLSERVERContext
             {
                 entity.ToTable("LoginTime");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.DateTimeLogin)
                     .HasColumnType("datetime")

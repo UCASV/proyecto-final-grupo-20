@@ -2,21 +2,13 @@
 using MaterialSkin.Controls;
 using Model.SQLSERVERContext;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Proyecto
 {
     public partial class frmPrincipal : MaterialForm
     {
         public Controller.LoginController loginController = new Controller.LoginController();
-        public Controller.PrincipalAppointmentProcessController principalAppointmentProcessController = new Controller.PrincipalAppointmentProcessController(); 
+        public Controller.PrincipalAppointmentProcessController principalAppointmentProcessController = new Controller.PrincipalAppointmentProcessController();
         public Administrator administratorRef;
         public Cabin cabinRef;
         public Employee employeeRef;
