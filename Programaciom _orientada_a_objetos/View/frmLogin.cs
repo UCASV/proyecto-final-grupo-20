@@ -17,7 +17,10 @@ namespace Proyecto
     {
         
         public Controller.LoginController loginController = new Controller.LoginController();
-        public LoginTime loginTimeRef;
+        public LoginTime loginTimeRef = new LoginTime();
+        public Administrator administratorRef = new Administrator();
+        public Cabin cabinRef;
+        public Employee employeeRef;
         public frmLogin()
         {
             InitializeComponent();
@@ -42,13 +45,21 @@ namespace Proyecto
                 /*MessageBox.Show("Bienvenido!", "Clinica UCA",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);*/
                 //DateTime dateTime = new DateTime();
+                administratorRef = loginController.GetAdministrator(txtUser.Text, txtPassword.Text);
+                employeeRef = loginController.GetEmployee(administratorRef);
 
-                loginTimeRef.DateTimeLogin = DateTime.Now;
+                cabinRef = loginController.GetCabin(administratorRef);
+                //loginTimeRef.Id = 1;
+                DateTime dateTime = DateTime.Now;
+                loginTimeRef.DateTimeLogin = dateTime;
+                loginTimeRef.IdAdministrator = administratorRef.Id;
+                loginTimeRef.IdCabin = cabinRef.Id;
                 loginController.SetLoginTime(loginTimeRef);
                 
-                var window = new frmPrincipal(loginController.GetAdministrator(txtUser.Text, txtPassword.Text));
+                var window = new frmPrincipal(administratorRef,cabinRef,loginTimeRef);
                 window.ShowDialog();
                 this.Hide();
+
 
             }
             else

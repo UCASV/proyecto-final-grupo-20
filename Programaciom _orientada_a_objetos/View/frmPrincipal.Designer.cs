@@ -59,20 +59,20 @@ namespace Proyecto
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialMultiLineTextBox1 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.tb = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtTelephone = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtEmail = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtDui = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtDirection = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtName = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.btnRegister = new MaterialSkin.Controls.MaterialButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -191,15 +191,15 @@ namespace Proyecto
             // 
             this.lblTypeEmployee.AutoSize = true;
             this.lblTypeEmployee.Depth = 0;
-            this.lblTypeEmployee.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblTypeEmployee.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblTypeEmployee.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblTypeEmployee.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblTypeEmployee.ForeColor = System.Drawing.Color.Blue;
             this.lblTypeEmployee.HighEmphasis = true;
             this.lblTypeEmployee.Location = new System.Drawing.Point(20, 373);
             this.lblTypeEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTypeEmployee.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblTypeEmployee.Name = "lblTypeEmployee";
-            this.lblTypeEmployee.Size = new System.Drawing.Size(105, 29);
+            this.lblTypeEmployee.Size = new System.Drawing.Size(71, 19);
             this.lblTypeEmployee.TabIndex = 25;
             this.lblTypeEmployee.Text = "Loading...";
             this.lblTypeEmployee.UseAccent = true;
@@ -208,15 +208,15 @@ namespace Proyecto
             // 
             this.lblDirection.AutoSize = true;
             this.lblDirection.Depth = 0;
-            this.lblDirection.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblDirection.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblDirection.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblDirection.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblDirection.ForeColor = System.Drawing.Color.Blue;
             this.lblDirection.HighEmphasis = true;
             this.lblDirection.Location = new System.Drawing.Point(20, 302);
             this.lblDirection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDirection.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblDirection.Name = "lblDirection";
-            this.lblDirection.Size = new System.Drawing.Size(105, 29);
+            this.lblDirection.Size = new System.Drawing.Size(71, 19);
             this.lblDirection.TabIndex = 24;
             this.lblDirection.Text = "Loading...";
             this.lblDirection.UseAccent = true;
@@ -225,15 +225,15 @@ namespace Proyecto
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Depth = 0;
-            this.lblEmail.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblEmail.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblEmail.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEmail.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblEmail.ForeColor = System.Drawing.Color.Blue;
             this.lblEmail.HighEmphasis = true;
             this.lblEmail.Location = new System.Drawing.Point(20, 232);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(105, 29);
+            this.lblEmail.Size = new System.Drawing.Size(71, 19);
             this.lblEmail.TabIndex = 23;
             this.lblEmail.Text = "Loading...";
             this.lblEmail.UseAccent = true;
@@ -242,15 +242,15 @@ namespace Proyecto
             // 
             this.lblName.AutoSize = true;
             this.lblName.Depth = 0;
-            this.lblName.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblName.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblName.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblName.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblName.ForeColor = System.Drawing.Color.Blue;
             this.lblName.HighEmphasis = true;
             this.lblName.Location = new System.Drawing.Point(19, 162);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(105, 29);
+            this.lblName.Size = new System.Drawing.Size(71, 19);
             this.lblName.TabIndex = 22;
             this.lblName.Text = "Loading...";
             this.lblName.UseAccent = true;
@@ -259,15 +259,15 @@ namespace Proyecto
             // 
             this.lblId.AutoSize = true;
             this.lblId.Depth = 0;
-            this.lblId.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblId.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblId.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblId.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblId.ForeColor = System.Drawing.Color.Blue;
             this.lblId.HighEmphasis = true;
             this.lblId.Location = new System.Drawing.Point(20, 91);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(105, 29);
+            this.lblId.Size = new System.Drawing.Size(71, 19);
             this.lblId.TabIndex = 20;
             this.lblId.Text = "Loading...";
             this.lblId.UseAccent = true;
@@ -379,15 +379,15 @@ namespace Proyecto
             // 
             this.lblEmailC.AutoSize = true;
             this.lblEmailC.Depth = 0;
-            this.lblEmailC.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblEmailC.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblEmailC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEmailC.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblEmailC.ForeColor = System.Drawing.Color.Blue;
             this.lblEmailC.HighEmphasis = true;
             this.lblEmailC.Location = new System.Drawing.Point(20, 302);
             this.lblEmailC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmailC.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblEmailC.Name = "lblEmailC";
-            this.lblEmailC.Size = new System.Drawing.Size(105, 29);
+            this.lblEmailC.Size = new System.Drawing.Size(71, 19);
             this.lblEmailC.TabIndex = 24;
             this.lblEmailC.Text = "Loading...";
             this.lblEmailC.UseAccent = true;
@@ -396,15 +396,15 @@ namespace Proyecto
             // 
             this.lblInCharge.AutoSize = true;
             this.lblInCharge.Depth = 0;
-            this.lblInCharge.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblInCharge.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblInCharge.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblInCharge.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblInCharge.ForeColor = System.Drawing.Color.Blue;
             this.lblInCharge.HighEmphasis = true;
             this.lblInCharge.Location = new System.Drawing.Point(20, 232);
             this.lblInCharge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInCharge.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblInCharge.Name = "lblInCharge";
-            this.lblInCharge.Size = new System.Drawing.Size(105, 29);
+            this.lblInCharge.Size = new System.Drawing.Size(71, 19);
             this.lblInCharge.TabIndex = 23;
             this.lblInCharge.Text = "Loading...";
             this.lblInCharge.UseAccent = true;
@@ -413,15 +413,15 @@ namespace Proyecto
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Depth = 0;
-            this.lblPhone.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblPhone.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblPhone.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPhone.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblPhone.ForeColor = System.Drawing.Color.Blue;
             this.lblPhone.HighEmphasis = true;
             this.lblPhone.Location = new System.Drawing.Point(18, 162);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(105, 29);
+            this.lblPhone.Size = new System.Drawing.Size(71, 19);
             this.lblPhone.TabIndex = 22;
             this.lblPhone.Text = "Loading...";
             this.lblPhone.UseAccent = true;
@@ -430,15 +430,15 @@ namespace Proyecto
             // 
             this.lblDirectionC.AutoSize = true;
             this.lblDirectionC.Depth = 0;
-            this.lblDirectionC.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblDirectionC.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblDirectionC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblDirectionC.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             this.lblDirectionC.ForeColor = System.Drawing.Color.Blue;
             this.lblDirectionC.HighEmphasis = true;
             this.lblDirectionC.Location = new System.Drawing.Point(18, 91);
             this.lblDirectionC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDirectionC.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblDirectionC.Name = "lblDirectionC";
-            this.lblDirectionC.Size = new System.Drawing.Size(105, 29);
+            this.lblDirectionC.Size = new System.Drawing.Size(71, 19);
             this.lblDirectionC.TabIndex = 21;
             this.lblDirectionC.Text = "Loading...";
             this.lblDirectionC.UseAccent = true;
@@ -514,7 +514,7 @@ namespace Proyecto
             this.tabPage1.Controls.Add(this.materialCard2);
             this.tabPage1.Controls.Add(this.materialCard1);
             this.tabPage1.Controls.Add(this.materialLabel3);
-            this.tabPage1.Controls.Add(this.materialButton4);
+            this.tabPage1.Controls.Add(this.btnRegister);
             this.tabPage1.ImageKey = "Icons8Edit64.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -528,7 +528,7 @@ namespace Proyecto
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard2.Controls.Add(this.materialLabel9);
-            this.materialCard2.Controls.Add(this.materialMultiLineTextBox1);
+            this.materialCard2.Controls.Add(this.tb);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard2.Location = new System.Drawing.Point(589, 77);
@@ -552,21 +552,21 @@ namespace Proyecto
             this.materialLabel9.TabIndex = 33;
             this.materialLabel9.Text = "Enfermedades crónicas:\r\n";
             // 
-            // materialMultiLineTextBox1
+            // tb
             // 
-            this.materialMultiLineTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialMultiLineTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialMultiLineTextBox1.Depth = 0;
-            this.materialMultiLineTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMultiLineTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialMultiLineTextBox1.Hint = "Ingrese en formato de lista";
-            this.materialMultiLineTextBox1.Location = new System.Drawing.Point(20, 40);
-            this.materialMultiLineTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.materialMultiLineTextBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialMultiLineTextBox1.Name = "materialMultiLineTextBox1";
-            this.materialMultiLineTextBox1.Size = new System.Drawing.Size(499, 210);
-            this.materialMultiLineTextBox1.TabIndex = 0;
-            this.materialMultiLineTextBox1.Text = "";
+            this.tb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb.Depth = 0;
+            this.tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tb.Hint = "Ingrese en formato de lista";
+            this.tb.Location = new System.Drawing.Point(20, 40);
+            this.tb.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tb.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tb.Name = "tb";
+            this.tb.Size = new System.Drawing.Size(499, 210);
+            this.tb.TabIndex = 0;
+            this.tb.Text = "";
             // 
             // materialCard1
             // 
@@ -574,13 +574,13 @@ namespace Proyecto
             this.materialCard1.Controls.Add(this.materialLabel7);
             this.materialCard1.Controls.Add(this.materialLabel8);
             this.materialCard1.Controls.Add(this.materialLabel6);
-            this.materialCard1.Controls.Add(this.materialTextBox6);
+            this.materialCard1.Controls.Add(this.txtTelephone);
             this.materialCard1.Controls.Add(this.materialLabel5);
             this.materialCard1.Controls.Add(this.materialLabel4);
-            this.materialCard1.Controls.Add(this.materialTextBox4);
-            this.materialCard1.Controls.Add(this.materialTextBox3);
-            this.materialCard1.Controls.Add(this.materialTextBox5);
-            this.materialCard1.Controls.Add(this.materialTextBox2);
+            this.materialCard1.Controls.Add(this.txtEmail);
+            this.materialCard1.Controls.Add(this.txtDui);
+            this.materialCard1.Controls.Add(this.txtDirection);
+            this.materialCard1.Controls.Add(this.txtName);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard1.Location = new System.Drawing.Point(16, 76);
@@ -630,22 +630,22 @@ namespace Proyecto
             this.materialLabel6.TabIndex = 30;
             this.materialLabel6.Text = "DUI:";
             // 
-            // materialTextBox6
+            // txtTelephone
             // 
-            this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox6.LeadingIcon = null;
-            this.materialTextBox6.Location = new System.Drawing.Point(19, 393);
-            this.materialTextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.materialTextBox6.MaxLength = 50;
-            this.materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox6.Multiline = false;
-            this.materialTextBox6.Name = "materialTextBox6";
-            this.materialTextBox6.Size = new System.Drawing.Size(464, 50);
-            this.materialTextBox6.TabIndex = 25;
-            this.materialTextBox6.Text = "";
-            this.materialTextBox6.TrailingIcon = null;
+            this.txtTelephone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelephone.Depth = 0;
+            this.txtTelephone.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTelephone.LeadingIcon = null;
+            this.txtTelephone.Location = new System.Drawing.Point(19, 393);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelephone.MaxLength = 50;
+            this.txtTelephone.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTelephone.Multiline = false;
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(464, 50);
+            this.txtTelephone.TabIndex = 25;
+            this.txtTelephone.Text = "";
+            this.txtTelephone.TrailingIcon = null;
             // 
             // materialLabel5
             // 
@@ -673,73 +673,73 @@ namespace Proyecto
             this.materialLabel4.TabIndex = 28;
             this.materialLabel4.Text = "Nombre Completo:";
             // 
-            // materialTextBox4
+            // txtEmail
             // 
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(19, 219);
-            this.materialTextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.materialTextBox4.MaxLength = 50;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(464, 50);
-            this.materialTextBox4.TabIndex = 20;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Depth = 0;
+            this.txtEmail.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmail.LeadingIcon = null;
+            this.txtEmail.Location = new System.Drawing.Point(19, 219);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.MaxLength = 50;
+            this.txtEmail.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEmail.Multiline = false;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(464, 50);
+            this.txtEmail.TabIndex = 20;
+            this.txtEmail.Text = "";
+            this.txtEmail.TrailingIcon = null;
             // 
-            // materialTextBox3
+            // txtDui
             // 
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(19, 130);
-            this.materialTextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.materialTextBox3.MaxLength = 50;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(464, 50);
-            this.materialTextBox3.TabIndex = 15;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
+            this.txtDui.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDui.Depth = 0;
+            this.txtDui.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDui.LeadingIcon = null;
+            this.txtDui.Location = new System.Drawing.Point(19, 130);
+            this.txtDui.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDui.MaxLength = 50;
+            this.txtDui.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDui.Multiline = false;
+            this.txtDui.Name = "txtDui";
+            this.txtDui.Size = new System.Drawing.Size(464, 50);
+            this.txtDui.TabIndex = 15;
+            this.txtDui.Text = "";
+            this.txtDui.TrailingIcon = null;
             // 
-            // materialTextBox5
+            // txtDirection
             // 
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(19, 309);
-            this.materialTextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.materialTextBox5.MaxLength = 50;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(464, 50);
-            this.materialTextBox5.TabIndex = 23;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
+            this.txtDirection.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDirection.Depth = 0;
+            this.txtDirection.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDirection.LeadingIcon = null;
+            this.txtDirection.Location = new System.Drawing.Point(19, 309);
+            this.txtDirection.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDirection.MaxLength = 50;
+            this.txtDirection.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDirection.Multiline = false;
+            this.txtDirection.Name = "txtDirection";
+            this.txtDirection.Size = new System.Drawing.Size(464, 50);
+            this.txtDirection.TabIndex = 23;
+            this.txtDirection.Text = "";
+            this.txtDirection.TrailingIcon = null;
             // 
-            // materialTextBox2
+            // txtName
             // 
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(19, 40);
-            this.materialTextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(464, 50);
-            this.materialTextBox2.TabIndex = 14;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Depth = 0;
+            this.txtName.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.LeadingIcon = null;
+            this.txtName.Location = new System.Drawing.Point(19, 40);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.MaxLength = 50;
+            this.txtName.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtName.Multiline = false;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(464, 50);
+            this.txtName.TabIndex = 14;
+            this.txtName.Text = "";
+            this.txtName.TrailingIcon = null;
             // 
             // materialLabel3
             // 
@@ -758,23 +758,24 @@ namespace Proyecto
             this.materialLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialLabel3.UseAccent = true;
             // 
-            // materialButton4
+            // btnRegister
             // 
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(1013, 504);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.Size = new System.Drawing.Size(99, 36);
-            this.materialButton4.TabIndex = 18;
-            this.materialButton4.Text = "Registrar";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
+            this.btnRegister.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRegister.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnRegister.Depth = 0;
+            this.btnRegister.HighEmphasis = true;
+            this.btnRegister.Icon = null;
+            this.btnRegister.Location = new System.Drawing.Point(1013, 504);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRegister.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(99, 36);
+            this.btnRegister.TabIndex = 18;
+            this.btnRegister.Text = "Registrar";
+            this.btnRegister.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnRegister.UseAccentColor = false;
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // tabPage2
             // 
@@ -1185,13 +1186,13 @@ namespace Proyecto
         private System.Windows.Forms.TabPage tabPage8;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox6;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
+        private MaterialSkin.Controls.MaterialTextBox txtTelephone;
+        private MaterialSkin.Controls.MaterialTextBox txtDirection;
+        private MaterialSkin.Controls.MaterialTextBox txtEmail;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
+        private MaterialSkin.Controls.MaterialButton btnRegister;
+        private MaterialSkin.Controls.MaterialTextBox txtDui;
+        private MaterialSkin.Controls.MaterialTextBox txtName;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
@@ -1199,7 +1200,7 @@ namespace Proyecto
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialCard materialCard2;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox materialMultiLineTextBox1;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox tb;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private MaterialSkin.Controls.MaterialCard materialCard4;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;

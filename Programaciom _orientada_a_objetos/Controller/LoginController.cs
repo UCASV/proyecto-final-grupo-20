@@ -44,6 +44,18 @@ namespace Controller
             return typeEmployeeSend.TypeEmployee1;
         }
 
+        public Cabin GetCabin(Administrator administrator)
+        {
+            List<Cabin> cabins = db.Cabins.ToList();
+            Cabin cabinSend = cabins.Find(c => c.Manager == administrator.Username);
+
+
+            /*List<TypeEmployee> typeEmployees = db.TypeEmployees.ToList();
+            TypeEmployee typeEmployeeSend = typeEmployees.Find(t => t.Id == Employee.IdTypeEmployee);
+            */
+            return cabinSend;
+        }
+
         public List<AddressCabins> GetAddressCabin()
         {
             List<Cabin> cabins = db.Cabins.ToList();
