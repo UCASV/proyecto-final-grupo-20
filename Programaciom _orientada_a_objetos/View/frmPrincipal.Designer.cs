@@ -92,7 +92,9 @@ namespace Proyecto
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.materialTabControl2 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dgvVacunaciones = new System.Windows.Forms.DataGridView();
+            this.dgvSalaEspera = new System.Windows.Forms.DataGridView();
+            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
@@ -112,6 +114,8 @@ namespace Proyecto
             this.tabPage6.SuspendLayout();
             this.materialTabControl2.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVacunaciones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalaEspera)).BeginInit();
             this.SuspendLayout();
             // 
             // tabDash
@@ -1060,7 +1064,9 @@ namespace Proyecto
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.dateTimePicker1);
+            this.tabPage7.Controls.Add(this.dgvVacunaciones);
+            this.tabPage7.Controls.Add(this.dgvSalaEspera);
+            this.tabPage7.Controls.Add(this.materialLabel19);
             this.tabPage7.Controls.Add(this.materialLabel2);
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1071,13 +1077,42 @@ namespace Proyecto
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dgvVacunaciones
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(462, 160);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(437, 23);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dgvVacunaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVacunaciones.Location = new System.Drawing.Point(656, 110);
+            this.dgvVacunaciones.Name = "dgvVacunaciones";
+            this.dgvVacunaciones.RowTemplate.Height = 25;
+            this.dgvVacunaciones.Size = new System.Drawing.Size(475, 321);
+            this.dgvVacunaciones.TabIndex = 4;
+            // 
+            // dgvSalaEspera
+            // 
+            this.dgvSalaEspera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSalaEspera.Location = new System.Drawing.Point(69, 110);
+            this.dgvSalaEspera.Name = "dgvSalaEspera";
+            this.dgvSalaEspera.RowTemplate.Height = 25;
+            this.dgvSalaEspera.Size = new System.Drawing.Size(479, 321);
+            this.dgvSalaEspera.TabIndex = 3;
+            this.dgvSalaEspera.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // materialLabel19
+            // 
+            this.materialLabel19.AutoSize = true;
+            this.materialLabel19.Depth = 0;
+            this.materialLabel19.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel19.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel19.HighEmphasis = true;
+            this.materialLabel19.ImageKey = "Icons8Wait64.png";
+            this.materialLabel19.Location = new System.Drawing.Point(755, 27);
+            this.materialLabel19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel19.Name = "materialLabel19";
+            this.materialLabel19.Size = new System.Drawing.Size(252, 41);
+            this.materialLabel19.TabIndex = 2;
+            this.materialLabel19.Text = "VACUNACIONES";
+            this.materialLabel19.UseAccent = true;
+            this.materialLabel19.Click += new System.EventHandler(this.materialLabel19_Click_1);
             // 
             // materialLabel2
             // 
@@ -1087,13 +1122,13 @@ namespace Proyecto
             this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
             this.materialLabel2.HighEmphasis = true;
             this.materialLabel2.ImageKey = "Icons8Wait64.png";
-            this.materialLabel2.Location = new System.Drawing.Point(439, 23);
+            this.materialLabel2.Location = new System.Drawing.Point(161, 27);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(262, 41);
             this.materialLabel2.TabIndex = 0;
-            this.materialLabel2.Text = "SALÁ DE ESPERA";
+            this.materialLabel2.Text = "SALA DE ESPERA";
             this.materialLabel2.UseAccent = true;
             // 
             // tabPage8
@@ -1162,6 +1197,8 @@ namespace Proyecto
             this.materialTabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVacunaciones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalaEspera)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1233,6 +1270,9 @@ namespace Proyecto
         private MaterialSkin.Controls.MaterialLabel lblPhone;
         private MaterialSkin.Controls.MaterialLabel lblDirectionC;
         private MaterialSkin.Controls.MaterialLabel lblDateTime;
+        private MaterialSkin.Controls.MaterialLabel materialLabel19;
+        private System.Windows.Forms.DataGridView dgvVacunaciones;
+        private System.Windows.Forms.DataGridView dgvSalaEspera;
     }
 }
 
